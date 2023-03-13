@@ -117,11 +117,11 @@ const Hero = () => {
               responsive websites and applications.
             </Paragraph>
             <Paragraph>
-              Currently working at Rygrad Studio, and working on Rygrad.
-              Responsible for building and maintaining the Rygrad’s website,
-              game interfaces, and wiki. I work closely with other developers,
-              designers, and content creators to ensure that our products are
-              consistent with the games branding.
+              Currently working at Rygrad. Responsible for building and
+              maintaining the Rygrad’s website, game interfaces, and wiki. I
+              work closely with other developers, designers, and content
+              creators to ensure that our products are consistent with the games
+              branding.
             </Paragraph>
             <Paragraph>
               Aside from coding, I love to engage in some of my favorite
