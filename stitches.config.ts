@@ -10,8 +10,6 @@ const generalSans = GeneralSans({
   src: "./public/fonts/GeneralSans-Variable.ttf",
 });
 
-console.log(lora.style.fontFamily.replaceAll("'", ""));
-
 export const {
   styled,
   css,
