@@ -1,8 +1,9 @@
-import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { globalCss } from "@/stitches";
+import Layout from "@/components/common/Layout";
 
 const globalStyles = globalCss({
+  // Reset
   "html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, main, menu, nav, output, ruby, section, summary, time, mark, audio, video":
     {
       margin: "0",
@@ -36,9 +37,19 @@ const globalStyles = globalCss({
   table: {
     borderSpacing: "0",
   },
+
+  //
+  "html, body": {
+    backgroundColor: "$gray1",
+    color: "$gray12",
+  },
 });
 
 export default function App({ Component, pageProps }: AppProps) {
   globalStyles();
-  return <Component {...pageProps} />;
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
 }

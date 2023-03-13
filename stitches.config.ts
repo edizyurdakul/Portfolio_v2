@@ -5,10 +5,12 @@ export type { VariantProps } from "@stitches/react";
 import { Lora } from "next/font/google";
 import GeneralSans from "next/font/local";
 
-const lora = Lora({ subsets: ["latin"] });
+const lora = Lora({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 const generalSans = GeneralSans({
   src: "./public/fonts/GeneralSans-Variable.ttf",
 });
+
+console.log(lora.style.fontFamily.replaceAll("'", ""));
 
 export const {
   styled,
@@ -37,14 +39,18 @@ export const {
       )}, -apple-system, system-ui, sans-serif`,
     },
     space: {
-      1: "5px",
+      1: "8px",
+      2: "16px",
     },
     sizes: {
       1: "5px",
     },
 
     fontSizes: {
-      1: "12px",
+      1: "14px",
+      2: "16px",
+      3: "32px",
+      4: "48px",
     },
 
     radii: {
