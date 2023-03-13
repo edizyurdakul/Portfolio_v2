@@ -17,6 +17,7 @@ const StyledMain = styled("main", {
   mx: "auto",
   pt: "16rem",
   zIndex: "$4",
+  position: "relative",
 });
 
 const Image = styled(NextImage, {
