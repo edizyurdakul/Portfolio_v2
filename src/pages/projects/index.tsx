@@ -7,7 +7,7 @@ export default function Projects() {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Hero />
+      <h1>Work in progress</h1>
     </>
   );
 }
