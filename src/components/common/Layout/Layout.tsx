@@ -19,7 +19,6 @@ const StyledMain = styled("main", {
   zIndex: "$4",
 });
 
-const BackgroundImage = styled("div", { position: "relative" });
 const Image = styled(NextImage, {
   position: "absolute",
   right: "0",
