@@ -76,8 +76,7 @@ const Buttons = styled("div", {
   my: "$2",
 });
 
-const IconLinks = styled("a", {
-  color: "$gray11",
+const IconLinks = styled("div", {
   display: "flex",
   gap: "$2",
 
@@ -86,6 +85,9 @@ const IconLinks = styled("a", {
     transitionTimingFfunction: "cubic-bezier(0.4, 0, 0.2, 1)",
     transitionDuration: "150ms",
     cursor: "pointer",
+    textDecoration: "none",
+    color: "$gray11",
+
     "&:hover": {
       color: "$gray12",
     },
@@ -135,13 +137,13 @@ const Hero = () => {
             </Button>
           </Buttons>
           <IconLinks>
-            <a>
+            <a href="https://github.com/edizyurdakul">
               <GitHub />
             </a>
-            <a>
+            <a href="https://www.linkedin.com/in/edizyurdakul/">
               <LinkedIn />
             </a>
-            <a>
+            <a href="instagram.com/edizyurdakul/">
               <Instagram />
             </a>
           </IconLinks>
