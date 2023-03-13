@@ -1,10 +1,15 @@
+import { getCssText } from "@/stitches";
 import { Html, Head, Main, NextScript } from "next/document";
-import { styled } from "@/stitches";
 
 export default function Document() {
   return (
     <Html lang="en">
-      <Head />
+      <Head>
+        <style
+          id="stitches"
+          dangerouslySetInnerHTML={{ __html: getCssText() }}
+        />
+      </Head>
       <body>
         <Main />
         <NextScript />

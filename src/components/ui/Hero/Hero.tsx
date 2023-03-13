@@ -87,7 +87,6 @@ const IconLinks = styled("div", {
     cursor: "pointer",
     textDecoration: "none",
     color: "$gray11",
-
     "&:hover": {
       color: "$gray12",
     },
